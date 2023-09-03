@@ -21,7 +21,8 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
-            <scope>provided</scope>
+          <scope>provided</scope>
+            <!--  Scope “provided” нужен во время разработки, но не нужен в рантайме (у Tomcat уже есть эта зависимость в папке lib)-->
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
